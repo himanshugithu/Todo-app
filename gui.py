@@ -7,7 +7,7 @@ window = sg.Window("my todo app",layout=[[lable],[input_box,add_button]])
 while True:
     event,value = window.read()
     match event:
-        case 'add':
+        case 'Add':
             todos = function.get_todos()
             new_todo = value['todo'] + '\n'
             todos.append(new_todo)
